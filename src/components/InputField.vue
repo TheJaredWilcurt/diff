@@ -3,6 +3,10 @@
     <label :for="id">Input {{ id.toUpperCase() }}</label>
     <textarea
       :id="id"
+      autocomplete="off"
+      autocorrect="off"
+      autocapitalize="off"
+      spellcheck="false"
       :value="modelValue"
       @input="$emit('update:modelValue', $event.target.value)"
     ></textarea>

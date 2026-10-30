@@ -17,8 +17,6 @@
 </template>
 
 <script>
-import { diffChars } from 'diff';
-
 import InputField from '@/components/InputField.vue';
 import OutputField from '@/components/OutputField.vue';
 
