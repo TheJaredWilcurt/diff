@@ -38,7 +38,9 @@ jobs:
         with:
           auto-install: true
       - name: Verify Node
-        run: node -v && npm -v
+        run: node -v
+      - name: Verify npm
+        run: npm -v
       - name: Install dependencies
         run: npm ci
       - name: Build
