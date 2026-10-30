@@ -8,6 +8,11 @@ import vueDevTools from 'vite-plugin-vue-devtools';
 import vueDevToolsAccessibility from 'vue-dev-tools-accessibility';
 
 const config = defineConfig({
+  base: '/diff',
+  build: {
+    sourcemap: false,
+    target: 'baseline-widely-available'
+  },
   plugins: [
     vue(),
     vueDevTools({
