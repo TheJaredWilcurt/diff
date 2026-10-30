@@ -9,25 +9,28 @@
       id="b"
     />
   </div>
-  <div class="output">
-    <div>
-      {{ fieldA }}
-      {{ fieldB }}
-    </div>
-  </div>
+  <OutputField
+    class="output"
+    :fieldA="fieldA"
+    :fieldB="fieldB"
+  />
 </template>
 
 <script>
+import { diffChars } from 'diff';
+
 import InputField from '@/components/InputField.vue';
+import OutputField from '@/components/OutputField.vue';
 
 export default {
   name: 'PlayGround',
   components: {
-    InputField
+    InputField,
+    OutputField
   },
   data: function () {
     return {
-      fieldA: 'asdf',
+      fieldA: '',
       fieldB: ''
     };
   }
@@ -41,8 +44,6 @@ export default {
   flex-direction: column;
   gap: 1rem;
   width: 50%;
-}
-.output div {
-  background: #F003;
+  font-family: monospace;
 }
 </style>

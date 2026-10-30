@@ -37,8 +37,9 @@ export default {
   label {
     position: absolute;
     top: 0.25rem;
-    right: 0.25rem;
+    right: 0.75rem;
     font-size: 0.7rem;
+    opacity: 0.25;
   }
 }
 </style>

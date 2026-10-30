@@ -3,6 +3,27 @@
   --fg: #B18B99;
   --bg-light: hsl(from var(--bg) h s 14% / alpha);
   --bg-lighter: hsl(from var(--bg) h s 17% / alpha);
+  --diff-added: #113A11;
+  --diff-added-border: #2C6A2C;
+  --diff-removed: #360B0B;
+  --diff-removed-border: #6A2727;
+
+  /* Syntax highlighting colors */
+  --syntax-comment: hsl(from rebeccapurple h 20% 45% / alpha);
+  --syntax-keyframes: hsl(from rebeccapurple h s calc(l + 12) / alpha);
+  --syntax-number: hsl(from rebeccapurple calc(h + 180) s calc(l - 12) / alpha);
+  --syntax-number-darker: hsl(from var(--hljs-number) h s calc(l - 6) / alpha);
+  --syntax-string: hsl(from rebeccapurple calc(h + 310) s 50% / alpha);
+  --syntax-symbol: hsl(from rebeccapurple calc(h + 80) s 40% / alpha);
+  --syntax-tag: hsl(from rebeccapurple calc(h + 50) calc(s + 5) 43% / alpha);
+
+  --hljs-keyframes: var(--syntax-keyframes);
+  --hljs-comment: var(--syntax-comment);
+  --hljs-number: var(--syntax-number);
+  --hljs-number-darker: var(--syntax-number-darker);
+  --hljs-string: var(--syntax-string);
+  --hljs-symbol: var(--syntax-symbol);
+  --hljs-tag: var(--syntax-tag);
 }
 
 *,
