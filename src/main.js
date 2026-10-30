@@ -3,6 +3,7 @@ import constantsPlugin from 'vue-options-api-constants-plugin';
 
 import App from '@/App.vue';
 
+import 'normalize.css/normalize.css';
 import '@/assets/main.css';
 
 const app = createApp(App);
